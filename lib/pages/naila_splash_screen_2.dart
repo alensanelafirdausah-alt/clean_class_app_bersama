@@ -48,7 +48,7 @@ class _NailaSplashScreen2State extends State<NailaSplashScreen2> {
             ),
           ),
           Text(
-            'Better teamwork for a better room',
+            'Betters teamwork for a better room',
             style: TextStyle(fontSize: 30, color: Colors.black),
           ),
           SizedBox(
