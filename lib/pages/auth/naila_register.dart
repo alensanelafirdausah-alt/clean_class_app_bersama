@@ -10,6 +10,8 @@ class NailaRegister extends StatefulWidget {
 class _NailaRegisterState extends State<NailaRegister> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+
+    );
   }
 }
