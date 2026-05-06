@@ -57,10 +57,11 @@ class _NailaSplashScreen2State extends State<NailaSplashScreen2> {
           SizedBox(height: 15),
           SizedBox(
             child: ElevatedButton(
-              onPressed: () => AlensaLogin(),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AlensaLogin()),
               ),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
               child: Text(
                 'Next',
                 style: TextStyle(
