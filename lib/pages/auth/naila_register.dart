@@ -94,7 +94,8 @@ class _NailaRegisterState extends State<NailaRegister> {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                suffix: Icon(Icons.remove_red_eye_outlined, color: Colors.grey),
+              suffix: IconButton(onPressed: () {
+              },icon: Icon(Icons.remove_red_eye,color: Colors.grey,)),
               ),
             ),
             SizedBox(height: 20),
@@ -109,7 +110,8 @@ class _NailaRegisterState extends State<NailaRegister> {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                suffix: Icon(Icons.remove_red_eye_outlined, color: Colors.grey),
+                suffix: IconButton(onPressed: () {
+                }, icon: Icon(Icons.remove_red_eye,color: Colors.grey,)),
               ),
             ),
             SizedBox(height: 20),
@@ -119,7 +121,7 @@ class _NailaRegisterState extends State<NailaRegister> {
                 ElevatedButton(
                   onPressed: () {
                     if (_name.text == "nailaimut" &&
-                        _email.text == "umminaila" &&
+                        _email.text == "umminaila@gmail.com" &&
                         _password == "nailaxrpl1" &&
                         _confirmPassword == "nailaxrpl1") {
                       Navigator.push(
