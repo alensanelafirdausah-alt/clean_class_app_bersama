@@ -15,54 +15,80 @@ class _NailaMenuUtamaState extends State<NailaMenuUtama> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
             height: 280,
             width: double.infinity,
             color: Colors.blue,
-            child:
-            Text(
-              "Welcome\nClean Class App",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                SizedBox(
+                  height: 100,
+                  width: 250,
+                  child: Card(
+                    shape: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(30)),
+                    ),
+                    color: Colors.orangeAccent.shade100,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Welcome\nClean Class App",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 50),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(
-                    Icons.calendar_month,
-                    color: Colors.blue,
-                    size: 20),
-              ),
-              IconButton(
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => NailaJadwalKelas()));},
-                icon: Icon(
-                    Icons.account_balance,
-                    color: Colors.blue,
-                    size: 20),
-              ),
-              IconButton(
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => NailaAnggotaPiket(),));},
-                icon: Icon(
-                    Icons.card_giftcard,
-                    color: Colors.blue,
-                    size: 20),
+                icon: Icon(Icons.calendar_month, color: Colors.blue, size: 20),
               ),
               IconButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => NailaAnggotaPiket()));
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => NailaJadwalKelas()),
+                  );
                 },
-                icon: Icon(
-                    Icons.add,
-                    color: Colors.blue,
-                    size: 20),
+                icon: Icon(Icons.account_balance, color: Colors.blue, size: 20),
+              ),
+              IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => NailaAnggotaPiket(),
+                    ),
+                  );
+                },
+                icon: Icon(Icons.card_giftcard, color: Colors.blue, size: 20),
+              ),
+              IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => NailaAnggotaPiket(),
+                    ),
+                  );
+                },
+                icon: Icon(Icons.add, color: Colors.blue, size: 20),
               ),
             ],
           ),
