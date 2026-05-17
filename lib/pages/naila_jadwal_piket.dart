@@ -1,3 +1,4 @@
+import 'package:clean_class_app_bersama/pages/naila_detail_jadwal_piket.dart';
 import 'package:clean_class_app_bersama/services/naila_jadwal_kelas.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class NailaJadwalPiket extends StatefulWidget {
 class _NailaJadwalPiketState extends State<NailaJadwalPiket> {
   @override
   Widget build(BuildContext context) {
-    var size =MediaQuery.of(context).size;
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
@@ -19,6 +20,7 @@ class _NailaJadwalPiketState extends State<NailaJadwalPiket> {
           "Jadwal Piket",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
+
       ),
       backgroundColor: Colors.white,
       body: Container(
@@ -30,11 +32,19 @@ class _NailaJadwalPiketState extends State<NailaJadwalPiket> {
           itemBuilder: (context, i) {
             return Card(
               color: Colors.orangeAccent.shade100,
-                child: ListTile(
-                  leading: Image.asset(naila[i].image),
-                  title: Text(naila[i].hari),
-                  subtitle: Text(naila[i].name),
-                ),
+              child: ListTile(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => NailaDetailJadwalPiket(),
+                    ),
+                  );
+                },
+                leading: Image.asset(naila[i].image),
+                title: Text(naila[i].hari),
+                subtitle: Text(naila[i].name),
+              ),
             );
           },
         ),
