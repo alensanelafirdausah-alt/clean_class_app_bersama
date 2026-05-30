@@ -1,3 +1,6 @@
+import 'package:clean_class_app_bersama/pages/alensa_dasboardPage_halamanPertama.dart';
+import 'package:clean_class_app_bersama/pages/auth/naila_register.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AlensaLogin extends StatefulWidget {
@@ -8,8 +11,135 @@ class AlensaLogin extends StatefulWidget {
 }
 
 class _AlensaLoginState extends State<AlensaLogin> {
+  TextEditingController _username = TextEditingController();
+  TextEditingController _password = TextEditingController();
+  bool _isSecure = true;
+  IconData _icon = Icons.remove_red_eye;
+  void isSecure() {
+    setState(() {
+      if (_isSecure) {
+        _isSecure = false;
+        _icon = CupertinoIcons.eye_slash;
+      } else {
+        _isSecure = true;
+        _icon = CupertinoIcons.eye_fill;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.blue,
+      body: Center(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Hello',
+                  style: TextStyle(
+                    fontSize: 32,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'Welcome to our clean class app',
+                  style: TextStyle(fontSize: 30, color: Colors.black),
+                ),
+                SizedBox(height: 20),
+                TextField(
+                  controller: _username,
+                  keyboardType: TextInputType.text,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    hintText: "enter username",
+                    labelText: "user name",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    prefix: Icon(Icons.person, color: Colors.blue),
+                  ),
+                ),
+                SizedBox(height: 20),
+                TextField(
+                  controller: _password,
+                  keyboardType: TextInputType.text,
+                  obscureText: _isSecure,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    hintText: "Password",
+                    labelText: "Tulis Password Kamu",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    suffix: IconButton(onPressed: isSecure, icon: Icon(_icon)),
+                  ),
+                ),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        if (_username.text == "aaa" &&
+                            _password.text == "111") {
+                          Navigator.pushReplacement(
+                            context,
+
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  AlensaDasboardpageHalamanpertama(),
+                            ),
+                          );
+                        } else {
+                          showDialog(
+                            context: context,
+                            builder: (context) => AlertDialog(
+                              title: Text("Username atau Password salah"),
+                            ),
+                          );
+                        }
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white,
+                      ),
+                      child: Text("login"),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      "Don't have an account?",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    TextButton(
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => NailaRegister(),
+                        ),
+                      ),
+                      child: const Text(
+                        "Sign Up",
+                        style: TextStyle(color: Colors.yellow),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
