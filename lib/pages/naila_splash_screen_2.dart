@@ -18,7 +18,7 @@ class _NailaSplashScreen2State extends State<NailaSplashScreen2> {
         children: [
           Container(
             width: size.width,
-            height: size.height * 0.55,
+            height: 350,
             decoration: BoxDecoration(
               color: Colors.blue,
               borderRadius: BorderRadius.only(
@@ -30,8 +30,8 @@ class _NailaSplashScreen2State extends State<NailaSplashScreen2> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ClipOval(
-                  child: Image.asset(
-                    'assets/images/iconclean.png',
+                  child: Image.network(
+                    'assets/images/bersih.jpg',
                     height: 200,
                     width: 200,
                     fit: BoxFit.cover,
@@ -52,7 +52,7 @@ class _NailaSplashScreen2State extends State<NailaSplashScreen2> {
           SizedBox(height: 10),
           Text(
             'Betters teamwork for a better room',
-            style: TextStyle(fontSize: 10, color: Colors.black),
+            style: TextStyle(fontSize: 15, color: Colors.black),
           ),
           SizedBox(height: 15),
           SizedBox(
@@ -67,7 +67,7 @@ class _NailaSplashScreen2State extends State<NailaSplashScreen2> {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
               ),
             ),

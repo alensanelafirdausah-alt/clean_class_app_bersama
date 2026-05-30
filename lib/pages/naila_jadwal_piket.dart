@@ -20,7 +20,6 @@ class _NailaJadwalPiketState extends State<NailaJadwalPiket> {
           "Jadwal Piket",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
-
       ),
       backgroundColor: Colors.white,
       body: Container(
@@ -37,12 +36,13 @@ class _NailaJadwalPiketState extends State<NailaJadwalPiket> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => NailaDetailJadwalPiket(),
+                      builder: (context) =>
+                          NailaDetailJadwalPiket(id: naila[i].id),
                     ),
                   );
                 },
                 leading: Image.asset(naila[i].image),
-                title: Text(naila[i].hari),
+                title: Text(naila[i].day),
                 subtitle: Text(naila[i].name),
               ),
             );
