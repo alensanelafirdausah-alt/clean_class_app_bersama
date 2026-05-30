@@ -1,3 +1,4 @@
+import 'package:clean_class_app_bersama/pages/alensa_dasboard_page_halaman_pertama.dart';
 import 'package:clean_class_app_bersama/pages/naila_jadwal_piket.dart';
 import 'package:clean_class_app_bersama/pages/naila_tambah_jadwal.dart';
 import 'package:flutter/material.dart';
@@ -80,7 +81,8 @@ class _NailaMenuUtamaState extends State<NailaMenuUtama> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ,
+                        builder: (context) =>
+                            AlensaDasboardpageHalamanpertama(),
                       ),
                     );
                   },
@@ -98,7 +100,8 @@ class _NailaMenuUtamaState extends State<NailaMenuUtama> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ,
+                        builder: (context) =>
+                            AlensaDasboardpageHalamanpertama(),
                       ),
                     );
                   },

@@ -26,7 +26,7 @@ class _AlensaDetailAnggotaPiketState extends State<AlensaDetailAnggotaPiket> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "hari",
+              "Hari",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
@@ -35,7 +35,7 @@ class _AlensaDetailAnggotaPiketState extends State<AlensaDetailAnggotaPiket> {
             Text(aln[widget.id].day),
             SizedBox(height: 10),
             Text(
-              "anggota",
+              "Anggota",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
