@@ -1,12 +1,12 @@
 class AlensaAnggotaPiketModel {
   final int id;
-  final String day;
+  final String hari;
   final String anggota;
   final String Image;
 
   AlensaAnggotaPiketModel({
     required this.id,
-    required this.day,
+    required this.hari,
     required this.anggota,
     required this.Image,
   });

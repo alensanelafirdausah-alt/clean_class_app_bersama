@@ -101,7 +101,7 @@ class _AlensaProfilePageState extends State<AlensaProfilePage> {
               ),
               leading: Icon(Icons.person),
               title: Text(
-                'name',
+                'Nama',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               subtitle: Text(name),

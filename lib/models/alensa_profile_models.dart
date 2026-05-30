@@ -1,10 +1,10 @@
 class AlensaProfileModels {
-  final String name;
+  final String nama;
   final String bio;
   final String email;
 
   AlensaProfileModels({
-    required this.name,
+    required this.nama,
     required this.bio,
     required this.email,
   });

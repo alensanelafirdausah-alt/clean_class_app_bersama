@@ -17,10 +17,10 @@ class _AlensaDasboardpageHalamanpertamaState
   Map<int, AlensaDasboardModel> alen = {
     0: AlensaDasboardModel(
       page: AlensaDasboardpageHalamanpertama(),
-      icon: Icons.home,
+      icone: Icons.home,
     ),
-    1: AlensaDasboardModel(page: AlensaSettingPage(), icon: Icons.settings),
-    2: AlensaDasboardModel(page: AlensaProfilePage(), icon: Icons.person),
+    1: AlensaDasboardModel(page: AlensaSettingPage(), icone: Icons.settings),
+    2: AlensaDasboardModel(page: AlensaProfilePage(), icone: Icons.person),
   };
 
   @override
@@ -40,10 +40,10 @@ class _AlensaDasboardpageHalamanpertamaState
         items: alen.entries
             .map(
               (a) => BottomNavigationBarItem(
-                icon: Icon(a.value.icon, color: Colors.white),
-                label: '',
+                icon: Icon(a.value.icone, color: Colors.white),
+                label: 'pencarian',
 
-                activeIcon: Icon(a.value.icon, color: Colors.blue),
+                activeIcon: Icon(a.value.icone, color: Colors.blue),
               ),
             )
             .toList(),

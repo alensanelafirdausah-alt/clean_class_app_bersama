@@ -32,7 +32,7 @@ class _AlensaDetailAnggotaPiketState extends State<AlensaDetailAnggotaPiket> {
                 color: Colors.black,
               ),
             ),
-            Text(aln[widget.id].day),
+            Text(aln[widget.id].hari),
             SizedBox(height: 10),
             Text(
               "Anggota",
@@ -44,7 +44,7 @@ class _AlensaDetailAnggotaPiketState extends State<AlensaDetailAnggotaPiket> {
             Text(aln[widget.id].anggota),
             SizedBox(height: 10),
             Text(
-              "gambar",
+              "Gambar",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.black,

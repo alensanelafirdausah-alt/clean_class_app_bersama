@@ -14,7 +14,7 @@ class _AlensaSplashScreenState extends State<AlensaSplashScreen> {
   @override
   void initState() {
     w = Timer.periodic(
-      const Duration(seconds: 30),
+      const Duration(seconds: 50),
       (Timer) => Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => AlensaSplashScreen()),

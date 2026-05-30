@@ -18,7 +18,7 @@ class _AlensaAnggotaPiketState extends State<AlensaAnggotaPiket> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('anggota piket'),
+        title: Text('Anggota piket'),
         backgroundColor: Colors.blue,
       ),
       body: Column(
@@ -50,7 +50,7 @@ class _AlensaAnggotaPiketState extends State<AlensaAnggotaPiket> {
                     width: 50,
                     height: 50,
                   ),
-                  title: Text(book.day),
+                  title: Text(book.hari),
                   onTap: () {
                     Navigator.push(
                       context,
@@ -71,7 +71,7 @@ class _AlensaAnggotaPiketState extends State<AlensaAnggotaPiket> {
 
   void search(String query) {
     final suggestions = aln.where((book) {
-      final bookTitle = book.day.toLowerCase();
+      final bookTitle = book.hari.toLowerCase();
       final input = query.toLowerCase();
       return bookTitle.contains(input);
     }).toList();

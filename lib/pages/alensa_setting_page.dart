@@ -16,7 +16,7 @@ class _AlensaSettingPageState extends State<AlensaSettingPage> {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text(
-          "setting",
+          "Setting",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
       ),

@@ -24,7 +24,7 @@ class _AlensaDetailRuanganPageState extends State<AlensaDetailRuanganPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "nama ruangan",
+              "Nama ruangan",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
@@ -39,7 +39,7 @@ class _AlensaDetailRuanganPageState extends State<AlensaDetailRuanganPage> {
                 color: Colors.black,
               ),
             ),
-            Text(alen[widget.id].kegiatan),
+            Text(alen[widget.id].kegiatann),
             SizedBox(height: 10),
             Text(
               "gambar",

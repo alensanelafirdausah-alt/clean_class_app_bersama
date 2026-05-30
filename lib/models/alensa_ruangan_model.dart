@@ -1,13 +1,13 @@
 class AlensaRuanganModel {
   final int id;
   final String namaRuangan;
-  final String kegiatan;
+  final String kegiatann;
   final String image;
 
   AlensaRuanganModel({
     required this.id,
     required this.namaRuangan,
-    required this.kegiatan,
+    required this.kegiatann,
     required this.image,
   });
 }

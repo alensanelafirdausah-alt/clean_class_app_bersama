@@ -26,7 +26,7 @@ class _AlensaRuanganPageState extends State<AlensaRuanganPage> {
               controller: controler,
               decoration: InputDecoration(
                 suffixIcon: Icon(Icons.search),
-                hintText: 'cari ruangan',
+                hintText: 'Cari ruangn',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide(color: Colors.black),
