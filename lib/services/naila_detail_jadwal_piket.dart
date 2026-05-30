@@ -1,0 +1,58 @@
+import 'package:clean_class_app_bersama/models/naila_jadwal_kelas_model.dart';
+
+List<NailaJadwalKelasModel> naila = [
+  NailaJadwalKelasModel(
+    id: 0,
+    name: 'Naila',
+    image: 'assets/images/bersih.jpg',
+    day: 'Luna',
+    task: 'manyapu,mangepel,rapikan meja dan kursi',
+    anggota: 'naila,husro,anjani',
+    date_time: '01-11-2009',
+  ),
+  NailaJadwalKelasModel(
+    id: 1,
+    name: 'Alensa',
+    image: 'assets/images/bersih.jpg',
+    day: 'Martian',
+    task: 'manyapu,mangepel,rapikan meja dan kursi',
+    anggota: 'naila,husro,anjani',
+    date_time: '01-11-2009',
+  ),
+  NailaJadwalKelasModel(
+    id: 2,
+    name: 'Husro',
+    image: 'assets/images/bersih.jpg',
+    day: 'Mercy',
+    task: 'manyapu,mangepel,rapikan meja dan kursi',
+    anggota: 'naila,husro,anjani',
+    date_time: '01-11-2009',
+  ),
+  NailaJadwalKelasModel(
+    id: 3,
+    name: 'Vena',
+    image: 'assets/images/bersih.jpg',
+    day: 'Jovian',
+    task: 'manyapu,mangepel,rapikan meja dan kursi',
+    anggota: 'naila,husro,anjani',
+    date_time: '01-11-2009',
+  ),
+  NailaJadwalKelasModel(
+    id: 4,
+    name: 'Vanera',
+    image: 'assets/images/bersih.jpg',
+    day: 'Luna',
+    task: 'manyapu,mangepel,rapikan meja dan kursi',
+    anggota: 'naila,husro,anjani',
+    date_time: '01-11-2009',
+  ),
+  NailaJadwalKelasModel(
+    id: 5,
+    name: 'Reva',
+    image: 'assets/images/bersih.jpg',
+    day: 'Saturna',
+    task: 'manyapu,mangepel,rapikan meja dan kursi',
+    anggota: 'naila,husro,anjani',
+    date_time: '01-11-2009',
+  ),
+];
