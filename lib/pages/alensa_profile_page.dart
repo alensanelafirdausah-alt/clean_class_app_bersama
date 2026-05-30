@@ -1,4 +1,3 @@
-import 'package:clean_class_app_bersama/pages/naila_notification.dart';
 import 'package:flutter/material.dart';
 
 class AlensaProfilePage extends StatefulWidget {
@@ -72,7 +71,7 @@ class _AlensaProfilePageState extends State<AlensaProfilePage> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => NailaNotification()),
+                MaterialPageRoute(builder: (context) => AlensaProfilePage()),
               );
             },
             icon: Icon(Icons.notifications),

@@ -1,7 +1,4 @@
 import 'package:clean_class_app_bersama/pages/alensa_profile_page.dart';
-import 'package:clean_class_app_bersama/pages/naila_keamanan_akun.dart';
-import 'package:clean_class_app_bersama/pages/naila_notification.dart';
-import 'package:clean_class_app_bersama/pages/naila_splash_screen_2.dart';
 import 'package:flutter/material.dart';
 
 class AlensaSettingPage extends StatefulWidget {
@@ -59,7 +56,7 @@ class _AlensaSettingPageState extends State<AlensaSettingPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => NailaKeamananAkun(),
+                          builder: (context) => AlensaProfilePage(),
                         ),
                       );
                     },
@@ -90,7 +87,7 @@ class _AlensaSettingPageState extends State<AlensaSettingPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => NailaNotification(),
+                          builder: (context) => AlensaProfilePage(),
                         ),
                       );
                     },
@@ -111,7 +108,7 @@ class _AlensaSettingPageState extends State<AlensaSettingPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => NailaSplashScreen2(),
+                              builder: (context) => AlensaProfilePage(),
                             ),
                           );
                         },

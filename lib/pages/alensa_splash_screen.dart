@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:clean_class_app_bersama/pages/naila_splash_screen_2.dart';
 import 'package:flutter/material.dart';
 
 class AlensaSplashScreen extends StatefulWidget {
@@ -18,7 +17,7 @@ class _AlensaSplashScreenState extends State<AlensaSplashScreen> {
       const Duration(seconds: 30),
       (Timer) => Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => NailaSplashScreen2()),
+        MaterialPageRoute(builder: (context) => AlensaSplashScreen()),
       ),
     );
     super.initState();
