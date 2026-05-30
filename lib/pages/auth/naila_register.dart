@@ -1,4 +1,4 @@
-import 'package:clean_class_app_bersama/pages/auth/alensa_login.dart';
+import 'package:clean_class_app_bersama/pages/naila_menu_utama.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -135,8 +135,7 @@ class _NailaRegisterState extends State<NailaRegister> {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) =>
-                                AlensaDasboardpageHalamanpertama(),
+                            builder: (context) => NailaMenuUtama(),
                           ),
                         );
                       } else {
@@ -167,7 +166,9 @@ class _NailaRegisterState extends State<NailaRegister> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => AlensaLogin()),
+                        MaterialPageRoute(
+                          builder: (context) => NailaRegister(),
+                        ),
                       );
                     },
                     child: Text(

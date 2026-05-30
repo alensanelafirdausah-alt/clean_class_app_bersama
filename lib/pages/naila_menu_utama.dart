@@ -80,7 +80,7 @@ class _NailaMenuUtamaState extends State<NailaMenuUtama> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ,
+                        builder: (context) => NailaJadwalPiket(),
                       ),
                     );
                   },
@@ -98,7 +98,7 @@ class _NailaMenuUtamaState extends State<NailaMenuUtama> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ,
+                        builder: (context) => NailaTambahJadwal(),
                       ),
                     );
                   },

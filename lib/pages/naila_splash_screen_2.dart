@@ -1,4 +1,4 @@
-import 'package:clean_class_app_bersama/pages/auth/alensa_login.dart';
+import 'package:clean_class_app_bersama/pages/naila_menu_utama.dart';
 import 'package:flutter/material.dart';
 
 class NailaSplashScreen2 extends StatefulWidget {
@@ -59,7 +59,7 @@ class _NailaSplashScreen2State extends State<NailaSplashScreen2> {
             child: ElevatedButton(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AlensaLogin()),
+                MaterialPageRoute(builder: (context) => NailaMenuUtama()),
               ),
               style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
               child: Text(
