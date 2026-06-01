@@ -4,7 +4,7 @@ List<NailaJadwalKelasModel> naila = [
   NailaJadwalKelasModel(
     id: 1,
     name: 'Naila',
-    image: "assets/images/iconclean.png",
+    image: "assets/images/bersih.jpg",
     day: "saturna",
     anggota: "",
     task:
@@ -14,7 +14,7 @@ List<NailaJadwalKelasModel> naila = [
   NailaJadwalKelasModel(
     id: 2,
     name: 'reva',
-    image: "assets/images/naila.jpg",
+    image: "assets/images/alensa.jpeg",
     day: "Luna",
     anggota: "",
     task:
@@ -24,7 +24,7 @@ List<NailaJadwalKelasModel> naila = [
   NailaJadwalKelasModel(
     id: 3,
     name: 'alenssa',
-    image: "assets/images/iconclean.png",
+    image: "assets/images/alensa.jpeg",
     day: "Luna",
     anggota: "",
 
@@ -35,7 +35,7 @@ List<NailaJadwalKelasModel> naila = [
   NailaJadwalKelasModel(
     id: 4,
     name: 'Naila',
-    image: "assets/images/iconclean.png",
+    image: "assets/images/alensa.jpeg",
     day: "Luna",
     anggota: "",
     task:
@@ -45,7 +45,7 @@ List<NailaJadwalKelasModel> naila = [
   NailaJadwalKelasModel(
     id: 5,
     name: 'Naila',
-    image: "assets/images/iconclean.png",
+    image: "assets/images/alensa.jpeg",
     day: "Luna",
     anggota: "",
     task:

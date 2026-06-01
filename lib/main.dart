@@ -1,4 +1,4 @@
-import 'package:clean_class_app_bersama/pages/alensa_splash_screen.dart';
+import 'package:clean_class_app_bersama/pages/alensa_dasboard_page_halaman_pertama.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class _CleanClasAppState extends State<CleanClasApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AlensaSplashScreen(),
+      home: AlensaDasboardpageHalamanpertama(),
     );
   }
 }

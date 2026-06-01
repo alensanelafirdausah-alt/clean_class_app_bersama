@@ -59,12 +59,12 @@ class _NailaTambahJadwalState extends State<NailaTambahJadwal> {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            NailaDetailTambahPiket(id: ni[v].id),
+                            NailaDetailTambahPiket(id: neila[v].id),
                       ),
                     );
                   },
                   leading: Image.asset("assets/images/alensa.jpeg"),
-                  title: Text(ni[v].hari),
+                  title: Text(neila[v].hari),
                 );
               },
             ),

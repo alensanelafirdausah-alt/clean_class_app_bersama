@@ -1,9 +1,9 @@
-class NailaKeamananAkun {
+class NailaKeamananAkunModel {
   final String image;
   final String title;
   bool isRead = false;
 
-  NailaKeamananAkun({
+  NailaKeamananAkunModel({
     required this.image,
     required this.title,
     required this.isRead,

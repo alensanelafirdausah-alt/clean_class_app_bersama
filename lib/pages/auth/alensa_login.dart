@@ -39,7 +39,7 @@ class _AlensaLoginState extends State<AlensaLogin> {
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [Colors.blue, Colors.black],
+              colors: [Colors.blue, Colors.indigo],
             ),
           ),
           child: SingleChildScrollView(
